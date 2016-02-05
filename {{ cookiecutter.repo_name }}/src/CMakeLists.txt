@@ -1,6 +1,6 @@
 file (GLOB_RECURSE PROJECT_SRCS *.cpp *.cxx *.cc *.C *.c *.h *.hpp)
 set (PROJECT_BIN ${PROJECT_NAME})
-
+cmake_policy(SET CMP0042 NEW)
 if (NOT DEFINED PROJECT_BUILD_SHARED)
     if (CMAKE_CROSSCOMPILING)
         set(PROJECT_BUILD_SHARED 0)
